@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "quantumtask-backend"
+version = "0.1.0"
+description = "Backend for QuantumTask MVP"
+authors = ["Hugo Paquet <hugo.paquet@quantumizeai.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.109.0"
+uvicorn = "^0.27.0"
+sqlalchemy = "^2.0.25"
+asyncpg = "^0.29.0"
+pydantic = "^2.6.0"
+spacy = "^3.7.2"
+scikit-learn = "^1.4.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
